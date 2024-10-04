@@ -74,6 +74,46 @@
   </div>
 </div>
   <!-- Fin Modal -->
+  <div class="modal" id="modal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- Modal body -->
+        <div class="modal-body" style="color: darkred;">
+          Cuerpo de la ventana Modal
+          Una ventana modal es un elemento HTML que se posiciona encima de la página y tiene una dimensión especifica que 
+          permite que pongamos cualquier tipo de información; ya sea texto, imagen, vídeo, formularios o cualquier otro elemento 
+          que se nos ocurra.
+        </div>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->   
+<!-- Inicio Offcanvas Sidebar-->
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Facebook (falta link).</p>
+    <p>Instagram (falta link).</p>
+    <button class="btn btn-danger" type="button">button red</button>
+  </div>
+</div>
+<!-- final offcanvas Sidebar-->
 <!-- ------------------------------------------------------------------------------------------------------ -->
     <div class="container">
         <!-- Carousel -->
@@ -146,13 +186,31 @@
            <button type="button" class="btn btn-dark">Dark</button>
            <button type="button" class="btn btn-light">Light</button>
            <button type="button" class="btn btn-link">Link</button>
+           <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            show offcanvas Sidebar
+          </button>
            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+           
             Open modal
             </button></div>
             <p>Aquí debería ir un texto</p>
       </div>
+        
       <div class="container-fluid">
         <button type="button" class="btn btn-secondary">agregar</button>
+        <!--inicio card  -->
+        <div class="container mt-3">
+          <h2>Perfil de Bob</h2>
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="img/bob.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Bob Esponja</h4>
+              <p class="card-text">Bob Esponja pantalones cuadrados es el mejor amigo de Patrik star</p>
+              <a href="#" class="btn btn-primary">ver perfil completo</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">información</button>
+            </div>
+          </div>
+        <!-- fin card --> 
         <h2>container-fluid</h2>
         <h2><p>Cuando almorzamos?</p></h2>
         <h2>division</h2>
@@ -163,6 +221,7 @@
          <div class="row">
             <div class="col-sm-6" style="background-color:  papayawhip;"><h3>Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu reino; hágase tu voluntad, en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal. Amén.</h3>
            </div>
+      
             <div class="col-sm-6" style="background-color: thistle;"><h3>Cristo es mi redentor y nada me faltará</h3></div>
             
          </div>
@@ -178,6 +237,7 @@
 
             <div class="col-sm-4" style="background-color: wheat;"><h3>tu hermano</h3><p>"one, two, three, four, five , six, seven, eight, nine, ten, eleven, twelven, thirteen, fourteen...
 "</p></div> 
+           
          </div>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
