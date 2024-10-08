@@ -211,6 +211,86 @@
             </div>
           </div>
         <!-- fin card --> 
+
+         <!-- inicio acordeon -->
+         <div class="container mt-3">
+          <h2>Accordion Example</h2>
+          <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+          <div id="accordion">
+            <div class="card" style="background-color: yellow;">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  uno....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card" style="background-color: blue;">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo" style="color: aliceblue;">
+                Collapsible Group Item #2
+              </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body" style="color: aliceblue;">
+                  Dos.....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card" style="background-color: brown;">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree" style="color: aliceblue;">
+                  Collapsible Group Item #3
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body" style="color: aliceblue;">
+                  Tres....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+          <!-- fin acordeon -->  <br>
+       
+          <!-- Inicio scrollpy -->
+           <h3>Usando Scrollpy</h3> <br>
+          <!-- The scrollable area -->
+            <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100%">
+
+          <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+              <ul class="navbar-nav">
+              <li><a href="#section1">Section 1</a></li>
+              <li><a href="#section2">Section 2</a></li>
+              <li><a href="#section3">Section 3</a></li>
+            </nav>
+
+          <!-- Section 1 -->
+          <div id="section1" style="background-color: aliceblue;">
+            <h1>Section 1</h1>
+            <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+          </div> <br>
+          <!-- Section 2 -->
+          <div id="section2" style="background-color: aliceblue;">
+            <h1>Section 2</h1>
+            <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+          </div> <br>
+          <!-- Section 3 -->
+          <div id="section3" style="background-color: aliceblue;">
+            <h1>Section 3</h1>
+            <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+          </div> <br>
+
+        <!-- fin scrollpy -->
+
         <h2>container-fluid</h2>
         <h2><p>Cuando almorzamos?</p></h2>
         <h2>division</h2>
